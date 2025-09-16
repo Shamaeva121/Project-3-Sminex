@@ -1,0 +1,23 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_socials";
+@import "blocks/_footer";
+@import "blocks/_landing-banner";
+@import "blocks/_page-content";
+@import "blocks/_objects";
+@import "blocks/_park-area";
+@import "blocks/_landing-design";
+@import "blocks/_apartment";
+@import "blocks/_picture";
+@import "blocks/_benefits-area";

@@ -1,0 +1,141 @@
+.apartment {
+    padding: 0 0 120px 0;
+
+    @include vp-1023 {
+        padding: 0 0 78px 0;
+    }
+
+    @include vp-767 {
+        padding: 0 0 58px 0;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 485px 1fr;
+        gap: 85px;
+
+        @media (max-width: 1665px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include vp-1023 {
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (max-width: 1665px) {
+            align-items: center;
+        }
+
+        @include vp-1023 {
+            align-items: center;
+            max-width: 340px;
+        }
+
+        @include vp-767 {
+            max-width: 295px;
+        }
+    }
+
+    &__title {
+        letter-spacing: -0.08em;
+        font-size: 34px;
+        line-height: 44px;
+        color: #C49A6C;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0 0 30px 0;
+        font-family: $ff-tenor;
+
+        @media (max-width: 1665px) {
+            text-align: center;
+        }
+
+        @include vp-1023 {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 16px 0;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0;
+        margin: 0 0 40px 0;
+
+        @media (max-width: 1665px) {
+            text-align: center;
+        }
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        @include vp-767 {
+            margin: 0 0 17px 0;
+        }
+    }
+
+    &__button {
+        color: #C49A6C;
+        font-size: 18px;
+        line-height: 26px;
+        background: unset;
+        border: 1px solid #C49A6C;
+        width: 220px;
+        padding: 17px;
+        border-radius: 0px 40px 0px 40px;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 15px 36px;
+            width: unset;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @include vp-1023 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.apartment__button:hover {
+    background-color: $color-fallow;
+    color: $color-rustic-red;
+}
+
+.apartment__button:focus-visible {
+    background-color: $color-fallow;
+    color: $color-rustic-red;
+}

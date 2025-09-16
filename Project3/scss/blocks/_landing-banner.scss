@@ -1,0 +1,71 @@
+.landing-banner {
+    background-image: url("../images/images-desktop/img-desktop-1.png");
+    margin: 0;
+    padding: 570px 0 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 740px;
+
+    @include vp-1023 {
+        padding: 338px 0 30px 0;
+    }
+
+    @include vp-767 {
+        padding: 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../images/images-desktop/img-desktop@2x-1.png");
+    }
+
+    @include vp-1023 {
+        background-image: url("../images/images-tablet/img-tablet-1.png");
+        min-height: 460px;
+    }
+
+    @media (min-resolution: 2dppx) and (max-width: 1023px) {
+        background-image: url("../images/images-tablet/img-tablet@2x-1.png");
+    }
+
+    @include vp-767 {
+        background-image: url("../images/images-mobile/img-mobile-1.png");
+        min-height: 300px;
+        position: relative;
+    }
+
+    @media (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url("../images/images-mobile/img-mobile@2x-1.png");
+    }
+
+    &__title {
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: -0.08em;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $ff-tenor;
+        max-width: 800px;
+        margin: 0 auto;
+
+        @include vp-1023 {
+            font-size: 40px;
+            line-height: 46px;
+            max-width: 520px;
+        }
+
+        @include vp-767 {
+            font-size: 28px;
+            line-height: 36px;
+            max-width: 335px;
+            padding: 20px 0 0 0;
+            bottom: -93px;
+            left: 18px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    }
+}

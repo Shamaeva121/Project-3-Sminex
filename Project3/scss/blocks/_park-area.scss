@@ -1,0 +1,251 @@
+.park-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 173px;
+        margin: 0 0 120px 0;
+
+        @media (max-width: 1665px) {
+            gap: 80px;
+        }
+
+        @media (max-width: 1445px) {
+            flex-direction: column;
+        }
+
+        @include vp-1023 {
+            gap: 48px;
+            align-items: center;
+            flex-direction: row;
+            margin: 0 0 70px 0;
+        }
+
+        @include vp-767 {
+            gap: 40px;
+            flex-direction: column;
+            margin: 0 0 48px 0;
+        }
+    }
+
+    &__data {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15px 0 0 0;
+
+        @include vp-1023 {
+            margin: 0;
+        }
+    }
+
+    &__data-text {
+        margin: 0 0 30px 0;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: -0.08em;
+        font-size: 34px;
+        line-height: 44px;
+        color: $color-fallow;
+        text-transform: uppercase;
+        font-family: $ff-tenor;
+
+        @include vp-1023 {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 15px 0;
+        }
+
+    }
+
+    &__data-item {
+        margin: 0;
+        padding: 0 0 0 19px;
+
+        @include vp-1023 {
+            padding: 0 0 0 14px;
+        }
+    }
+
+    &__data-list {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 400;
+        padding: 0 0 15px 0;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 0 10px 0;
+        }
+    }
+
+    &__square {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+    }
+
+    &__square-number {
+        letter-spacing: -0.04em;
+        font-size: 140px;
+        line-height: 100px;
+        color: $color-fallow;
+        margin: 0;
+        font-family: $ff-tenor;
+
+        @include vp-1023 {
+            font-size: 90px;
+            line-height: 70px;
+        }
+
+        @include vp-767 {
+            font-size: 70px;
+            line-height: 50px;
+        }
+    }
+
+    &__square-inner {
+        color: $color-fallow;
+        font-size: 34px;
+        line-height: 44px;
+        margin: 62px 0 0 0;
+        font-family: $ff-tenor;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0;
+        }
+
+        @include vp-767 {
+            margin: auto 0 0;
+        }
+
+    }
+
+    &__square-text {
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__square-wrapper {
+        margin: 0 0 22px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        min-width: 700px;
+
+        @media (max-width: 1660px) {
+            min-width: 340px;
+        }
+
+        @include vp-1023 {
+            min-width: 340px;
+        }
+
+        @include vp-767 {
+            min-width: 335px;
+        }
+    }
+
+    &__vector {
+        background-color: $color-rustic-red;
+        padding: 0 85px 0;
+        display: flex;
+        gap: 12px;
+
+        @include vp-1023 {
+            align-items: center;
+            padding: 0 43px 0;
+        }
+
+        @include vp-767 {
+            padding: 0 28px 0;
+        }
+    }
+
+    &__square-icon-left {
+        left: -1px;
+        top: 43px;
+        position: absolute;
+
+        @media (max-width: 1100px) {
+            top: 46px;
+        }
+
+        @include vp-1023 {
+            left: -1px;
+            top: 32px;
+        }
+
+        @include vp-767 {
+            top: 22px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__square-icon {
+        color: $color-fallow;
+        position: absolute;
+        right: 1px;
+        top: 43px;
+
+        @media (max-width: 1100px) {
+            top: 44px;
+        }
+
+        @include vp-1023 {
+            top: 29px;
+        }
+
+        @include vp-767 {
+            right: 0px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.park-area__vector:before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    border-style: solid;
+    left: 0;
+    right: 0;
+    top: 33%;
+    height: 1px;
+    color: $color-fallow;
+    z-index: -1;
+    border-width: 1px;
+
+    @include vp-767 {
+        top: 27%;
+    }
+}

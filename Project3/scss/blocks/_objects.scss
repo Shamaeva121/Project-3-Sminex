@@ -1,0 +1,358 @@
+.objects {
+    padding: 118px 0;
+
+    @include vp-1023 {
+        padding: 80px 0;
+    }
+
+    @include vp-767 {
+        padding: 60px 0;
+    }
+
+    &__accent {
+        display: flex;
+        flex-direction: row;
+        gap: 168px;
+
+        @media (max-width: 1700px) {
+            flex-direction: column;
+            gap: 65px;
+        }
+
+        @include vp-1023 {
+            flex-direction: column;
+            gap: 65px;
+        }
+
+        @include vp-767 {
+            display: unset;
+        }
+    }
+}
+
+
+.objects-info__area--center .landing-objects__wrapper-accent {
+    margin: 0 0 5px 0;
+}
+
+li::marker {
+    color: $color-fallow;
+}
+
+
+.objects-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 103px 0;
+    flex-direction: column;
+    border-color: $color-fallow;
+    border-style: solid;
+    border-top-right-radius: 600px;
+    border-top-left-radius: 600px;
+    border-bottom: hidden;
+    border-width: 1px;
+
+    &--modifier {
+        padding: 0 38px 0;
+
+        @media (max-width: 1665px) {
+            max-width: 456px;
+        }
+
+        @include vp-1023 {
+            padding: 39px 28px;
+            max-width: 266px;
+        }
+
+        @include vp-767 {
+            max-width: 220px;
+            padding: 21px 10px;
+        }
+    }
+
+    &--accent {
+        padding: 0 101px 0;
+
+        @media (max-width: 1665px) {
+            max-width: 400px;
+        }
+
+        @include vp-1023 {
+            max-width: 230px;
+        }
+
+        @include vp-767 {
+            max-width: 160px;
+            padding: 0 79px 0;
+        }
+    }
+
+    &--center {
+
+        @media (max-width: 1700px) {
+            border: none;
+            padding: 0;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        @include vp-767 {
+            display: grid;
+            grid-template-columns: 120px 120px;
+            align-items: unset;
+            gap: 20px 40px;
+        }
+    }
+
+    &__inner-text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__inner {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        color: $color-fallow;
+        font-family: $ff-tenor;
+        margin: 0 5px 0 0;
+
+        @include vp-1023 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__inner-length {
+        color: $color-fallow;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: $ff-tenor;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__area-icon {
+        display: none;
+
+        @include vp-1023 {
+            display: flex;
+        }
+    }
+
+    &__area {
+        text-align: center;
+        margin: 0 0 65px 0;
+        width: 192px;
+
+        @include vp-1023 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            margin: 0 0 auto;
+            gap: 20px;
+        }
+
+        @include vp-767 {
+            width: 120px;
+            gap: 10px;
+        }
+    }
+
+    &__park {
+        margin: 0 0 5px 0;
+
+        @include vp-1023 {
+            margin: 0 0 9px 0;
+        }
+
+        @include vp-767 {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        width: 110px;
+        height: 146px;
+        color: $color-fallow;
+        margin: 0 0 30px 0;
+
+        @include vp-1023 {
+            width: 70px;
+            height: 94px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            width: 60px;
+            height: 80px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        text-align: center;
+        color: $color-fallow;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.20em;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 5px 0;
+        }
+
+        @include vp-767{
+            font-size: 10px;
+            line-height: 14px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__name {
+        display: flex;
+        text-align: center;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 50px;
+        letter-spacing: -0.08em;
+        margin: 0 0 40px 0;
+        font-family: $ff-tenor;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__mark-icon {
+        color: $color-fallow;
+        margin: 0 0 15px 0;
+
+        @include vp-1023 {
+            margin: 0 0 10px 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__address {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__number {
+        letter-spacing: -0.04em;
+        font-size: 140px;
+        line-height: 100px;
+        color: $color-fallow;
+        margin: 0 0 40px 0;
+        text-align: center;
+        font-family: $ff-tenor;
+
+        @include vp-1023 {
+            font-size: 90px;
+            line-height: 70px;
+            margin: 0 0 20px 0;
+        }
+
+        @include vp-767 {
+            font-size: 70px;
+            line-height: 50px;
+        }
+    }
+
+    &__text-accent {
+        letter-spacing: -0.08em;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0;
+        color: $color-fallow;
+        font-family: $ff-tenor;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+.objects-info--center .objects-info__area--accent {
+
+    @include vp-767 {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+}
+
+.objects-info__area--right {
+
+    @include vp-1023 {
+        margin: auto 0 0;
+    }
+
+    @include vp-767 {
+        margin: 0 0 auto;
+    }
+}
+
+.objects-info__area--left {
+
+    @include vp-1023 {
+        margin: auto 0 0;
+    }
+}
